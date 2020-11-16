@@ -28,8 +28,8 @@ Bins are defined usign the [Bin class](https://github.com/lguzzi/WTau3Mu_Efficie
   - signal
  
 Once the dataframe is defined inside the python cfg script, the [extend()](https://github.com/lguzzi/WTau3Mu_EfficiencyTools/blob/master/libs/funcs.py#L6) function can be called to configure the model (i.e. to create workspace structure needed to run the simultaneous fit).  
-Each instance of the Bin class contains a RDF pointer to the histogram which will be fitted. To load these histograms you should call the [load_histogram()](https://github.com/lguzzi/WTau3Mu_EfficiencyTools/blob/master/libs/bin_cls.py#L30) function for each bin. This will take a few minutes.
-Once histograms are loaded into memory, you can call the [run_fit()](https://github.com/lguzzi/WTau3Mu_EfficiencyTools/blob/master/libs/bin_cls.py#L43) function for each bin (after all bins instances have been created). It requires the following arguments:
+Each instance of the Bin class contains a RDF pointer to the histogram which will be fitted. To load these histograms you should call the [load_histogram()](https://github.com/lguzzi/WTau3Mu_EfficiencyTools/blob/master/libs/bin_cls.py#L30) function for each bin (after all bins instances have been created). This will take a few minutes.
+Once histograms are loaded into memory, you can call the [run_fit()](https://github.com/lguzzi/WTau3Mu_EfficiencyTools/blob/master/libs/bin_cls.py#L43) function for each bin. It requires the following arguments:
 
   - out_dir: output directory (where to save the fit canvases)
   - json_dict (a json instance to save the results in a json format)
