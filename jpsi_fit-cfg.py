@@ -29,10 +29,10 @@ if __name__ == '__main__':
   files = {
     'mc'   : glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/MC_Jpsi_pt8GeV/*.root'),
     '2017B': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017B/*.root'),
-    '2017C': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017B/*.root'),
-    '2017D': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017B/*.root'),
-    '2017E': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017B/*.root'),
-    '2017F': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017B/*.root'),
+    '2017C': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017C/*.root'),
+    '2017D': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017D/*.root'),
+    '2017E': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017E/*.root'),
+    '2017F': glob.glob('/eos/cms/store/group/phys_muon/TagAndProbe/ULRereco/2017/102X/Jpsi/12Jun2020/Mu8Mu17Mu20/Run2017F/*.root'),
   } ; files['2017all'] = [jj for key, paths in files.items() for jj in paths if not key == 'mc']
 
   for file in files[args.sample]:
